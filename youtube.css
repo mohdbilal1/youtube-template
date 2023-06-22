@@ -1,0 +1,467 @@
+body{
+  padding-top: 92px;
+  padding-left: 100px;
+ 
+  background-color: rgb(252, 252, 252);
+  
+}
+.header-div{
+ 
+  height: 80px;
+  display: flex;
+  justify-content: space-between; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom: 1px solid rgb(214, 212, 212);
+  box-shadow: 1px 1px 1px rgb(228, 222, 222);
+  z-index: 1;
+ 
+
+  
+}
+
+.left-side{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  
+}
+
+
+
+.menu-logo{
+  height: 30px;
+  margin-left: 35px;
+  margin-right: 20px;
+  cursor: pointer;
+
+}
+
+.menu-div{
+  position: relative;
+
+}
+.menu-mouse-over{
+  position: absolute;
+  bottom: -15px;
+  right: -20px;
+  background-color: rgb(223, 221, 221);
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: arial;
+  color: black;
+  opacity: 0;
+  transition: 0.14s;
+  padding: 6px;
+  
+}
+
+.menu-div:hover .menu-mouse-over{
+  opacity: 1;
+}
+
+
+.left-side .youtube-icon .youtube-logo{
+ 
+  height: 100px;
+
+  cursor: pointer;
+  
+}
+
+.youtube-icon{
+  position: relative;
+}
+
+
+
+.youtube-icon .after-cursor-over{
+  position: absolute;
+  bottom: -1px;
+  right: -7px;
+  background-color: lightgray;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: arial;
+  border-radius: 3px;
+  padding: 4px 8px 4px 8px;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  transition: 0.15s;
+
+}
+
+.youtube-icon:hover .after-cursor-over{
+  opacity: 1;
+
+}
+
+
+.middle-side{
+
+  min-width: 100px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 120px;
+  
+
+}
+.search-bar{
+  height: 39px;
+  border: 1px solid rgb(223, 212, 212);
+  border-radius: 21px 0 0 21px;
+  flex: 1;
+  padding-left: 16px;
+  font-size: 18px;
+  box-shadow: inset 1px 2px 5px rgb(192, 191, 191);
+  
+  width: 0;
+  
+
+}
+.search-bar::placeholder{
+  font-size: 18px;
+  font-family: Arial;
+
+}
+
+.search-button{
+  border: 1px solid rgb(223, 212, 212);
+  width: 65px;
+  height: 43px;
+  margin-left: -1px;
+  border-radius: 0 21px 21px 0;
+  cursor: pointer;
+ 
+  
+}
+
+
+.search-img-icon{
+  margin-top: 5px;
+  height: 25px;
+
+
+
+}
+.for-mouse-over{
+  position: relative;
+}
+.after-over{
+  position: absolute;
+  bottom: -25px;
+  left: -25px;
+  background-color: lightgray;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: arial;
+  border-radius: 3px;
+  padding: 4px 8px 4px 8px;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  transition: 0.15s;
+
+
+}
+
+.for-mouse-over:hover .after-over{
+  opacity: 1;
+}
+
+
+
+.voice-button{
+  border:  solid rgb(223, 212, 212);
+  margin-left: 20px;
+  height: 42px;
+  width: 40px;
+  border: none;
+  border-radius: 21px;
+  cursor: pointer;
+ 
+
+}
+.voice-over-icon{
+height: 25px;
+
+}
+
+
+
+.right-side{
+
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 30px;
+  flex-shrink: 0;
+  
+
+}
+.creator-icon{
+  cursor: pointer;
+}
+.image-icon{
+  width: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  
+  
+}
+
+
+.side-bar{
+  position: fixed;
+  left: 0;
+  top: 80px;
+  bottom: 0;
+  width: 100px;
+  background-color: white;
+  border-right: 1px solid rgb(233, 230, 230);
+  box-shadow: 1px 1px 1px rgb(224, 221, 221);
+  z-index: 1;
+  cursor: pointer;
+
+}
+
+  
+
+.side-bar-icon1{
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4px;
+ 
+}
+.side-bar-icon1:hover{
+  background-color: rgb(233, 220, 220);
+}
+.side-bar-icon{
+ 
+  width: 32px;
+ 
+}
+
+.side-bar-icon1 div{
+  padding: 8px;
+  
+}
+
+
+
+
+.div11,
+.div22,
+.div33,
+.div44 {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  margin-left: 11px;
+}
+
+
+.p1,
+.p4,
+.p7,
+.p10 {
+  margin-top: 7px;
+  margin-left: 7px;
+  font-family: arial;
+  font-weight: bold;
+}
+
+.p2,
+.p3,
+.p5,
+.p6,
+.p8,
+.p9,
+.p11,
+.p12 {
+  margin: 9px;
+  color: gray;
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+  width: 300px;
+
+  border-radius: 6px;
+}
+
+
+
+.profile-img,
+.pro-img2,
+.pro-img3,
+.pro-img4 {
+  width: 60px;
+  height: 57px;
+  margin-top: 7px;
+  border-radius: 30px;
+
+}
+
+.p-div,
+.p-div2,
+.p-div3,
+.p-div4 {
+
+  width: 240px;
+  
+  
+
+}
+
+
+.div1,.div2,.div3,.div4{
+  position: relative;
+  width: 310px;
+}
+
+.vedio-time{
+  background-color: rgb(14, 13, 13);
+  color: white;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 12px;
+  right: 19px;
+  font-size: 18px;
+  padding: 4px 8px 4px 8px;
+}
+.notificatio-icon{
+  width: 35px;
+  cursor: pointer;
+}
+
+.notification-relative-class{
+  position: relative;
+  
+}
+
+.notification-absolute-class{
+  position: absolute;
+  top: -2px;
+  right: -8px;
+  background-color: rgb(204, 27, 27);
+  color: white;
+  width: 18px;
+  border-radius: 14px;
+  text-align: center;
+  font-weight: 500px;
+  padding: 2px 3px 2px 3px;
+}
+
+.notification-relative-class:hover .after-over{
+  opacity: 1;
+}
+
+
+
+
+
+
+.name-pro{
+  font-weight: bold;
+  font-size: 18px;
+
+}
+
+.total-subsc{
+  font-size: 14px;
+  color: gray;
+}
+.ccc{
+  padding-top: 8px;
+}
+.name-pro,.total-subsc{
+  padding-left: 8px;
+  padding-top: 5px;
+ 
+  font-family: arial;
+  
+}
+
+.after-mouse-use{
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: arial;
+  border-radius: 3px;
+  padding: 4px 8px 4px 8px;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  transition: 0.15s;
+
+  display: flex;
+  
+  background-color: white;
+  border: 1px;
+   width: 210px;
+   box-shadow: 2px 2px 2px 1px lightgray;
+}
+
+.profile-div{
+  position: relative;
+}
+.profile-div:hover .after-mouse-use{
+  opacity: 1;
+}
+
+
+
+
+.full-row-grid{
+  display: grid;
+  
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+
+  
+@media(min-width:1100px){
+  .full-row-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+  }
+}
+
+
+
+  
+@media(min-width:748px) and (max-width:1052px) {
+  .full-row-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+
+  
+  }
+}
+
+@media(max-width:747px){
+  .full-row-grid{
+    grid-template-columns: 1fr 1fr;
+   
+  
+  }
+}
+
